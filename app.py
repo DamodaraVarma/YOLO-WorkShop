@@ -17,5 +17,11 @@ display = ("male", "female")
 options = list(range(len(display)))
 value = st.selectbox("gender", options, format_func=lambda x: display[x])
 st.write(value)
-hello=st.radio("HOW")
-st.write(hello)
+ques = st.radio(
+    "Do you like coding?",
+    ('Yes','No'))
+if ques == 'Yes':
+    st.write('You like coding.')
+else:
+    st.write("You do not like coding.")
+
