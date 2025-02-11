@@ -13,3 +13,7 @@ name = st.text_input("Enter your name:")
 if st.button("Greet Me"):
     st.success(f"Hello, {name}! Welcome to Streamlit 🚀")
 st.slider("AGE:")
+display = ("male", "female")
+options = list(range(len(display)))
+value = st.selectbox("gender", options, format_func=lambda x: display[x])
+st.write(value)
