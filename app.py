@@ -13,5 +13,4 @@ name = st.text_input("Enter your name:")
 if st.button("Greet Me"):
     st.success(f"Hello, {name}! Welcome to Streamlit 🚀")
 st.slider("AGE:")
-st.selectbox("gfg")
 st.radio("ggfgfg")
